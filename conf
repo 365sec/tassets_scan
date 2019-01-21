@@ -1,0 +1,51 @@
+[elasticsearch]
+hosts = ["127.0.0.1"]
+timeout = 5000
+ipv4_index = d01
+ipv4_type = ipv4
+panel_index = panel
+panel_type = panel
+asset_index = assets
+asset_type = info
+vuln_index = d01_vuln
+vuln_type = d01_vuln
+target_index = target_d01
+target_type = target
+port_index = scan_ports
+port_type = port
+port_group_index = ports_group
+port_group_type = group
+
+[search]
+asset_page_num = 10
+country_terms_num = 10
+province_terms_num = 10
+port_terms_num = 5
+protocol_terms_num = 5
+tag_terms_num = 10
+poc_page_num = 15
+threat_page_num = 15
+
+[mongodb]
+host = 127.0.0.1
+port = 27017
+db = pocs
+collection = pocs
+username = gree
+password = 12345
+
+
+[scan_conf]
+path=/td01/test.csv
+network_settings_path=/td01/network_settings.json
+scan_settings_path=/td01/scan_settings.json
+fgap_settings_path=/td01/guangzha_settings.json
+target_status_path=/td01/target_status.json
+update_path=/td01/
+status_path=/td01/status.json
+
+
+[system]
+linux_disk_path = /home
+win_disk_path = /
+id = e9926540-bb0b-11e8-9fa5-a41f7280471e
